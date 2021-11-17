@@ -1,8 +1,15 @@
-<meta charset="utf-8">
-<!-- <script type="module" src="../../oda.js"></script> -->
-<!-- <script type="module" src="./test.js"></script> -->
-
-<!-- <oda-my-test></oda-my-test> -->
+<head>
+    <meta charset="utf-8">
+    <script type="module" src="https://cdn.jsdelivr.net/gh/odajs/odajs/oda.js"></script>
+    <script type="module">
+         ODA ({is: 'oda-my-test', imports:['@oda/button'],
+        template:/*html*/`
+            <h2>УУУУ....</h2>
+            <oda-button :icon-size="20" icon="icons:close">Очистить</oda-button>
+        `});
+    </script>
+</head>
 <body>
     <h1>Ntcn</h1>
+    <oda-my-test></oda-my-test>
 </body>
